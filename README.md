@@ -16,7 +16,7 @@ git clone https://github.com/greengoblinalex/metro_parser
 pip install -r requirements.txt
 ```
 
-3. Настройка параметров&nbsp;
+3. Настройка параметров<br>
 Для настройки параметров запроса к API Metro используются следующие аргументы метода `fetch_products_data()` класса `MetroParser`:
 * slug (int): Slug категории продуктов. По умолчанию - категория кофе.
 * store_id (int): ID магазина Metro. По умолчанию - магазин в Москве.
