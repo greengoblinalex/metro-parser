@@ -1,6 +1,7 @@
 import pandas as pd
 
 from .constants import METRO_BASE_URL
+from .exceptions import NoProductsFoundError
 
 
 class OutputController:
@@ -48,6 +49,9 @@ class OutputController:
                 'brand': product['manufacturer']['name']
             }
             processed_products_data.append(row)
+
+        if not processed_products_data:
+            raise NoProductsFoundError('Продукты не найдены в переданных словарях')
 
         return processed_products_data
 
