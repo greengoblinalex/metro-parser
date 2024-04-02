@@ -1,7 +1,7 @@
 import requests
 from requests.exceptions import RequestException
 
-from exceptions import UnexpectedDataFormatError
+from .exceptions import UnexpectedDataFormatError
 from .constants import (
     API_URL,
     HEADERS,

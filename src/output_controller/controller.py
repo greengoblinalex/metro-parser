@@ -1,7 +1,7 @@
 import pandas as pd
 
-from .constants import METRO_BASE_URL
 from .exceptions import NoProductsFoundError
+from .constants import METRO_BASE_URL
 
 
 class OutputController:
